@@ -1,0 +1,356 @@
+nav-color {
+    background-color: #dbc81d;
+  }
+
+  .logo{
+    margin-left: 200px;
+   
+  }
+
+
+/* Navbar Section CSS Start */
+
+
+a{
+    text-decoration: none;
+}
+
+
+.nav-color {
+    background-color: #0073E6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(39, 7, 155, 0.2);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99; 
+    font-size: 20px;
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end:0px ;
+    padding-inline-start: 40px;
+
+ }
+
+.Navbar-ul {
+   
+    float: right;
+    margin-right: 70px;
+
+}
+
+.Navbar-li{
+
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+
+}
+
+.Navbar-li a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+
+.Navbar-li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    transform-origin: 50% 50%;
+    transform: scaleX(0);
+    transition: transform .5s;
+    box-shadow: 0 0 10px rgba(255,255,255, 0.8);
+    background: linear-gradient(to right, orangered, #f3f3f3);
+
+}
+.Navbar-li a:hover::after{
+    transform-origin:right ;
+    transform: scaleX(1);
+
+}
+.Navbar-li a.active,.Navbar-li a:hover{
+    background: #303130;
+    transition: .5s;
+}
+
+ 
+ .Button1{
+     background-color: orangered;
+     margin-left: 30px;
+     font-size: 20px;
+ }
+ 
+ 
+ .top-header {
+     background-image: url("../images/Business-management-5-strategies-to-grow-the-company-2.jpg");
+     min-height: 500px;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .top-overlay {
+     min-height: 500px;
+     width: 100%;
+     position: absolute;
+     background-color: rgba(0, 0, 0, 0.5);
+ }
+ 
+ .Top {
+     margin-top: 150px;
+ }
+ 
+ .Top-title {
+     font-family: sans-serif;
+     color: white;
+     font-weight: 500;
+ }
+ 
+ .Top-subtitle {
+     color: aliceblue;
+ }
+ 
+ .Top-Button {
+     background-color: orangered;
+     color: aliceblue;
+     margin-top: 50px;
+ }
+ 
+ .min-service {
+     min-height: 500px;
+ }
+ 
+ .service {
+     color: orangered;
+ }
+ .common-heading h2{
+    font-size: 30px;
+    color: #ca7e55;
+}
+.common-heading p{
+    font-size: 32px;
+    color: #4e4069;
+}
+.orange-underline{
+    width: 100px;
+    height: 2px;
+    background-color: orangered;
+    margin: auto;
+}
+.service-card{
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px 3px gray;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .service-card:hover{
+   border-bottom: 3px solid orangered;
+   transform: translateY(-5px);
+  }
+  .CountSection{
+    margin-bottom: 50px;
+  }
+
+  .CountNumber{
+    margin-top: 50%;
+  }
+
+ 
+ .TotalWork {
+     background-image: url("../images/Business-management-5-strategies-to-grow-the-company-2.jpg");
+     min-height: 500px;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .TotalWorkOverlay {
+     min-height: 500px;
+     width: 100%;
+     position: absolute;
+     background-color: rgba(0, 0, 0, 0.9);
+ }
+
+ .Total-Cord {
+    margin-top: 40%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 3px gray;
+    transition: 0.4s ease-in-out;
+ }
+
+ Total-card:hover{
+    border-bottom: 3px solid orangered;
+    transform: translateY(-5px);
+   }
+
+   .TotalWork-title{
+    padding:0px;
+    margin-top: 0px;
+    
+   }
+ 
+ .CountNumber {
+     color: white;
+ }
+ 
+ .CountTitle {
+     color: white;
+ }
+ 
+ .CountSection {
+     margin-top: 15%;
+ }
+
+ .CourseDetails{
+    color: #0073E6;
+    font-size: 20px;
+ }
+
+ .OurCourses-img{
+    
+        border-radius: 12px;
+        box-shadow: 10px 10px 10px 3px gray;
+        transition: 0.4s ease-in-out;
+      
+ }
+
+ .OurCourses-img:hover{
+    border-bottom: 3px solid orangered;
+    transform: translateY(-5px);
+   }
+
+ .VideoCard{
+    background-color: #fff;
+    padding: 100px;
+    box-shadow: 0 0 5px 0 rgba(0,120,125,0.2);
+ }
+ 
+ .PlayButton{
+    font-size: 50px;
+    color: #0073E6;
+    cursor: pointer;
+ }
+ .VideoTitle{
+    color: #0073E6;
+    font-size: 30px;
+ }
+
+ .ClientImage{
+    margin:0 auto;
+ }
+
+ .min-client{
+    min-height: 500px;
+ }
+ .CourseDetails{
+    color: #0073E6;
+    font-size: 20px;
+ }
+
+
+.Course-img{
+   
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px 3px gray;
+    transition: 0.4s ease-in-out;
+  
+}
+
+.Course-img:hover{
+border-bottom: 3px solid orangered;
+transform: translateY(-5px);
+}
+
+.min-Course {
+    min-height: 500px;
+}
+
+ .Title{
+    color: #0073e6;
+    font-size: 25px;
+ }
+
+ .Last{
+    height: 15px;
+    background-color: #0073E6;
+ }
+
+ .p{
+    color: #0073E6;
+ }
+
+ .Footer-min{
+
+    
+    padding: 50px;
+    box-shadow: 0 0 5px 0 rgba(0,120,125,0.4);
+ }
+ .Newsletter{
+    padding: 60px 0;
+    background-color: #fef8f5;
+ 
+   }
+   
+   .Newsletter form{
+   padding-right:400px ;
+    padding-left: 400px;
+   }
+   .Newsletter button{
+    background-color: #c54811;
+    padding: 0 20px ;
+    color: white;
+   
+   
+   }
+   .lh-8{
+    line-height: 8px;
+   }
+   
+  .footer-upper ul li{
+   list-style-type: none;
+
+  }
+  .footer-upper ul{
+   margin: 0;
+   padding: 0;
+  }
+  .footer-upper ul i{
+   font-size: 13px;
+  }
+
+   .i{
+   margin: 2px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+   }
+
+   .Forms{
+    height: 550px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.FormsHeader{
+          color: #4C4C4C;
+          font-size: 15px;
+}
