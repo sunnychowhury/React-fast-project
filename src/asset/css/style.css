@@ -57,7 +57,7 @@ a{
 .Navbar-li a{
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: #0a0a0a;
     text-decoration: none;
     font-weight: 500;
     margin-left: 30px;
@@ -101,18 +101,14 @@ a{
  
  
  .top-header {
-     background-image: url("../images/Business-management-5-strategies-to-grow-the-company-2.jpg");
+     background-color: #f3f3f3;
      min-height: 500px;
      background-size: cover;
      background-position: center;
  }
  
- .top-overlay {
-     min-height: 500px;
-     width: 100%;
-     position: absolute;
-     background-color: rgba(0, 0, 0, 0.5);
- }
+
+ 
  
  .Top {
      margin-top: 150px;
@@ -174,8 +170,8 @@ a{
   }
 
  
- .TotalWork {
-     background-image: url("../images/Business-management-5-strategies-to-grow-the-company-2.jpg");
+ TotalWork {
+    
      min-height: 500px;
      background-size: cover;
      background-position: center;

@@ -1,48 +1,49 @@
-import React, { useEffect, useState } from 'react';
-import { Fragment } from 'react';
-import { Navbar, Nav,Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-import logo from '../../asset/images/logo.png';
-import '../../asset/css/style.css';
+import React, { Component, Fragment } from 'react';
+import { Container,Navbar,Nav ,Button} from 'react-bootstrap';
+import '../../asset/css/bootstrap.min.css';
+import logo from '../../asset/images/Logo.png';
+import '../../components/NavBar/NavBar.css';
 
-const NavBar = () => {
-  const [sticky, setSticky] = useState(false);
+class NavBar extends Component {
+     render() {
+          return (
+               <Fragment>
+                    <Container fluid>
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY > 440);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <Fragment>
-      <Navbar fixed="top" collapseOnSelect expand="lg" className={`${sticky ? 'nav-color' : ''}`}>
-      <Navbar.Brand className='logo ms-auto' as={NavLink} to="/" >
-          <img src={logo} alt="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto Navbar-ul">
+<Navbar className='Main-NavBar p-0' expand="lg" >
+      <Container >
+      <Navbar.Brand href="#" > <img src={ logo } alt="" className='Main-Nav'></img> </Navbar.Brand> 
+      <Navbar.Toggle aria-controls="navbarScroll" />
+      <Navbar.Collapse id="navbarScroll">
+      <Nav
+            className=" Navbar-ul ms-auto me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+      >
          
-          <NavLink className='Navbar-li text-red' to="/home" > <a href="#home"  >Home </a> </NavLink>
-          <NavLink className='Navbar-li text-red' to="/services" > <a href="#Service">Service</a> </NavLink>
-          <NavLink className='Navbar-li text-red' to="/portfolio" > <a href="#Portfolio">Portfolio</a> </NavLink>
-          <NavLink className='Navbar-li text-red' to="/course" > <a href="#Course">Course</a> </NavLink>
-          <NavLink className='Navbar-li text-red' to="/contact" > <a href="#Contact">Contact</a> </NavLink>
-          <NavLink className='Navbar-li text-red' to="/about" > <a href="#About">About</a> </NavLink>
-          <Button as={NavLink} to="/"  className='Button1' variant="success">Login</Button>
-          
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    </Fragment>
-  );
-};
+         <Nav.Link className='Navbar-li text-red' > <a href="#Demos"  >Demos </a> </Nav.Link>
+         <Nav.Link className='Navbar-li text-red'  > <a href="#About">About</a> </Nav.Link>
+         <Nav.Link className='Navbar-li text-red'  > <a href="#Blog">Blog</a> </Nav.Link>
+         <Nav.Link className='Navbar-li text-red'  > <a href="#Course">Pages</a> </Nav.Link>
+         <Nav.Link className='Navbar-li text-red'  > <a href="#Contact">Contact</a> </Nav.Link>
+        
+       
+         </Nav>
+            
+          <div className='Login'>  <Nav.Link className='Navbar-li text-red'  > <a href="#Login">Login</a> </Nav.Link>  </div>
+      
+            <Button variant="primary">Get Started Free</Button>
+      
+      </Navbar.Collapse>
+      </Container>
+</Navbar>
+
+</Container>
+
+                    
+               </Fragment>
+          );
+     }
+}
 
 export default NavBar;

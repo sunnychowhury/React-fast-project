@@ -1,115 +1,93 @@
 import React, { Component, Fragment } from 'react';
-import { Container, Row, Col, Form, Button} from 'react-bootstrap';
+import { Container, Row ,Col,Button,Navbar,Nav,Form} from 'react-bootstrap';
+import '../../components/Footer/Footer.css';
+import logo from '../../asset/images/Logo.png';
+import { FaTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { AiOutlineSkype } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 class Footer extends Component {
      render() {
           return (
+               <Fragment>
 
-            <Fragment className=''>
-              
-
-<div class="Newsletter mt-5 my-5">
-            <h2 class="text-center ">Join Our Newsletter</h2>
-            <p class="text-center fs-5">Tame quem null quae leg multo auto sint culpa leg noster magna</p>
-        
-            <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-       
-      </div>
+<Container>
+                              <Row>
+                                    <div className='mt-4'>
+                                          <Col>
 
 
-               <Container className='Footer-min text-center'>
-               <Row>
-           <Col lg={3} md={6} sm={12}>
+                                          <h1 className='footer-heading text-center mt-5 '>Drop us a line or two, we are <br></br> open for creative minds and<br></br>collaborations!</h1>
 
-           <h3>ThemeZone</h3>
-           <p>A108 Adam Street 
-                New York, NY 535022 
-                United States
-                </p>
-                <p class="lh-8"><strong>Phone:</strong> +1 5589 55488 55</p>
-              <p class="lh-8"><strong>Email:</strong> info@example.com</p>
+                                          <div className='text-center'><Button variant="primary" className=' mt-4'>Start Chatting Now</Button></div>
+                                          
+                                          
 
-              
-
-           </Col>
-
-           <Col lg={3} md={6} >
-               
-           <h3>Useful Links</h3>
-              
-                <p class='bx bx-chevron-right mb-3'> Home</p>
-                <p class='bx bx-chevron-right mb-3'> About us</p>
-                <p class='bx bx-chevron-right mb-3'> Services</p>
-                <p class='bx bx-chevron-right mb-3'> Terms of service</p>
-                <p class='bx bx-chevron-right mb-3'> Privacy policy</p>
-             
-
-           </Col>
-
-           <Col lg={3} md={6}  > 
-
-           <h3>Our Services</h3>
-              
-                <p class=' mb-2'> Design</p>
-                <p class=' mb-2'>  Development</p>
-                <p class=' mb-2'>  Management</p>
-                <p class=' mb-2'> Marketing</p>
-                <p class=' mb-2'> Design</p>
-             
-
-           </Col>
-
-           <Col lg={3} md={6}  > 
-
-               <h3>Our Social Networks</h3>
-                <p class=" my-4">Cra ftu Audio eu fiat lie par nao tier video magna der ves</p>
-                <i class=' i ' ><FaTwitter /></i>
-                <i class=' i bx bxl-facebook-circle' ><FaFacebookF /></i>
-                <i class=' i bx bxl-instagram' ><FaInstagram /></i>
-                <i class=' i bx bxl-skype'><AiOutlineSkype /></i>
-                <i class=' i bx bxl-linkedin'><FaLinkedinIn /></i>
-           </Col>
+                                          <div>
 
 
 
-           </Row>
+
+                                          <Navbar expand="lg"  className='Nav-bt'>
+                                                      <Container fluid>
+                                                      <Navbar.Brand href="#"><img src={ logo } alt="" ></img></Navbar.Brand>
+                                                      <Navbar.Toggle aria-controls="navbarScroll" />
+                                                      <Navbar.Collapse id="navbarScroll">
+                                                      <Nav
+                                                            className="mx-auto my-2 my-lg-0"
+                                                            style={{ maxHeight: '100px' }}
+                                                            navbarScroll
+                                                      >
+                                                            <Nav.Link href="#action1" className='text'>About</Nav.Link>
+                                                            <Nav.Link href="#action2" className='text'>Features</Nav.Link>
+                                                            <Nav.Link href="#action1" className='text'>Works</Nav.Link>
+                                                            <Nav.Link href="#action2" className='text'>Support</Nav.Link>
+                                                            
+                                                            
+                                                      </Nav>
+                                                      <Form className=" Side-icon d-flex">
+                                                            
+                                                      
+                                                      
+                                                      <p className='padding-icon'><a href=""><FaTwitter /></a></p>
+                                                      
+                                                      <p className='padding-icon'><a href=""><FaFacebookF /></a></p>
+                                                      
+                                                      <p className='padding-icon'><a href=""><FaInstagram /></a></p>
+                                                      
+                                                      <p className='padding-icon'><a href=""><FaGithub /></a></p>
+                                                      </Form>
+                                                      </Navbar.Collapse>
+                                                      </Container>
+
+                                          </Navbar>
+
+                                                <div className="orange-underline mt-2 m-auto"></div>
 
 
-               </Container>
+                                                <div className='d-flex'>
+                                                <Col>
+                                                      <p className='menu'>&copy;Copyright 2021, All Rights Reserved</p>
+                                                </Col>
 
+                                                <Col className='right-text'>
+                                                      <div className='d-flex'>
+                                                      <p className='Side-text'>Privacy Policy</p> 
+                                                      <p className='Side-text'>Terms & Conditions</p>
+                                                      <p className='Side-text'>Rulls and regulation</p>
+                                                      </div>   
+                                                </Col>
+                                                </div>
 
-             <footer class="my-5">
-       <Container>
-          <Row>
-            <Col md-6>
-              <p>© Copyright <strong>ThemeZone</strong>. All Rights Reserved</p>             
-            </Col>
+                                          </div>
+                                          </Col>
 
-            <Col md-6>
-              <p class="text-end">Designed by<strong> React-BootstrapMad</strong></p>
-            </Col>
-          </Row>
-          </Container>
-      </footer>
-
-
-            </Fragment>
-   
-
-  
+                                    </div>
+                              </Row>
+                        </Container>
+                    
+               </Fragment>
           );
      }
 }
